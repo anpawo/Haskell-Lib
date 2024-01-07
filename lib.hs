@@ -8,25 +8,15 @@
 module Lib where
 import Data.Char (isDigit)
 
--- | Checks if a string represents a valid integer.
---
--- The function returns 'True' if the string is a valid integer, and 'False'
--- otherwise. A valid integer may have an optional leading minus sign and must
--- consist of digits.
+-- | Checks if a 'String' represents a valid 'Int'. Returns a 'Bool'
 --
 -- Examples:
 --
--- >>> isInt "123"
+-- >>> isInt "5" && isInt "-2"
 -- True
---
--- >>> isInt "-42"
--- True
---
--- >>> isInt "3.14"
+-- >>> isInt "3.14" || isInt ""
 -- False
 --
--- >>> isInt "abc"
--- False
 isInt :: String -> Bool
 isInt "" = False
 isInt "-" = False
