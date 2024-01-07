@@ -1,0 +1,38 @@
+equivalent python/javascript - haskell
+
+-- char
+    -- c = 'a' => 'a'
+
+    -- repeat c x time -> string
+        c.repeat(y)
+        => replicate x c
+
+
+-- string
+    -- s = "hello" => "hello"
+
+
+-- list
+    -- x = [y, z] => [y, z]
+        
+    -- does x includes y -> bool
+        y in x
+        x.includes(y)
+        => y `elem` x",
+
+    -- get the first elem that satisfy the predicate f -> maybe
+        x.find(f)
+        => find f x
+
+    -- does every elem of x satisfy f -> bool
+        x.every(f)
+        => all f x
+
+
+-- dictionary
+    -- x = {y:z} => [(y, z)]
+
+    -- get value z of key y in x -> maybe
+        x[y]
+        => lookup y
+
