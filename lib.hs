@@ -14,7 +14,7 @@ import Data.Char (isDigit)
 --
 -- >>> isInt "5" && isInt "-2"
 -- True
--- >>> isInt "3.14" || isInt ""
+-- >>> isInt "3.14" || isInt "" || isInt "abc"
 -- False
 --
 isInt :: String -> Bool

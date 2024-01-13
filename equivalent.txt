@@ -34,5 +34,5 @@ equivalent python/javascript - haskell
 
     -- get value z of key y in x -> maybe
         x[y]
-        => lookup y
+        => lookup y x
 
